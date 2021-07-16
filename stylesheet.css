@@ -1,0 +1,288 @@
+header{
+    height:120px;
+    background-color: #FFF8DC;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    width:100%;
+    display: flex;
+   align-items: center;
+}
+.logo img{
+    width:350px;
+    margin-left:30px;
+
+}
+.top{
+    background-image: url("976B4E17-B024-47EF-8DE5-64B3C6150F46.jpeg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+}
+.top img{
+    width:60%;
+    margin:200px 20%;
+    
+}
+.profile{
+    width:100%;
+
+}
+.flex{
+    display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.box1{
+    width:30%;
+    margin:10px 35%;
+   text-align: center;
+   height:700px;
+   background-color: white;
+}
+.box2{
+    width:30%;
+    margin:10px 5%;
+   text-align: center;
+   height:700px;
+   background-color: white;
+}
+.box{
+    width:26%;
+    margin:10px 2%;
+   text-align: center;
+   height:700px;
+   background-color: white;
+}
+
+.fukidashi h1:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    border: 15px solid transparent;
+    border-top: 15px solid #FFE4E1;
+    width: 0;
+    height: 0;
+}
+.profile img{
+    width:70%;
+    height:300px;
+    padding-top:40px;
+   margin:0px 15%;
+}
+.profile h2{
+    font-size: 30px;
+    margin:30px 0px;
+}
+.fukidashi h1{
+   
+    position: relative;
+    padding: 0.5em 0.7em;
+    margin: 120px 25%;
+    background: #FFE4E1;
+    color: #333333;
+    font-weight: bold;
+    width:50%;
+    text-align: center;
+
+}
+.profile a{
+    background-color: #FFA07A;
+    display: inline-block;
+    width:30%;
+   height:40px;
+   color: ivory;
+   line-height: 40px;
+   border-radius: 50px;
+   margin-top:20px;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+.red{
+    color:#DB7093;
+}
+.yellow{
+    color:#FFD700;
+}
+.blue{
+    color:#136FFF;
+}
+
+  .profile a:hover {
+    color:white;
+    background: #FF8856;
+  }
+  .profile p{
+      margin-top:30px;
+  }
+  .gallery-wrap{
+      width:100%;
+  }
+
+  /*ギャラリー*/
+
+  .gallery{
+    columns: 4;/*段組みの数*/
+    padding:0 15px;/*ギャラリー左右に余白をつける*/
+    }
+    
+    .gallery li {
+        margin-bottom: 20px;/*各画像下に余白をつける*/
+    }
+    
+    /*ギャラリー内のイメージは横幅100%にする*/
+    .gallery img{
+      width:100%;
+      height:auto;
+      vertical-align: bottom;/*画像の下にできる余白を削除*/}
+    
+    /*　横幅900px以下の段組み設定　*/
+    @media only screen and (max-width: 900px) {
+      .gallery{
+      columns:3;
+      } 
+    }
+    
+    @media only screen and (max-width: 768px) {
+      .gallery{
+      columns: 2;
+      } 
+    }
+    
+    
+    /*========= レイアウトのためのCSS ===============*/
+    
+    ul{
+      margin:0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    a{
+      color: #333;
+    }
+    
+    a:hover,
+    a:active{
+      text-decoration: none;
+    }
+    
+
+    
+    /*画像を出現させるアニメーションCSS*/
+    
+    .flipLeft{
+    animation-name: flipLeft;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    perspective-origin: left center;
+    opacity: 0;
+    }
+    
+    @keyframes flipLeft{
+      from {
+       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+      opacity: 0;
+      }
+    
+      to {
+      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+      opacity: 1;
+      }
+    }
+    
+    
+    /*紹介ページ*/
+
+    .shoukai{
+        margin-top:200px;
+        
+    }
+    .flex2{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+   .shoukai img{
+       width:30%;
+      margin-left:15%;
+      margin-right:2%;
+      height:auto;
+   }
+   .block{
+       display: inline-block;
+       width:40%;
+      margin-left:10%;
+   }
+   .block h3{
+       font-size:25px;
+       display: inline-block;
+       border-bottom:2px solid #FFA07A;
+       margin-bottom:40px;
+   }
+   .orange{
+       color:#FFA07A;
+   }
+   .block p{
+       font-size:20px;
+   }
+   
+   
+
+   #page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #ef3f40;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0d8';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .space{
+      margin-right:50px;
+  }
+  
+  /*footer*/
+
+  footer{
+      width:100%;
+      height:300px;
+      background-color: #FFF8DC;
+     margin-top:100px;
+     text-align: center;
+  }
+
+  footer img{
+      width:30%;
+      margin-top:110px;
+      
+  }
+
+  footer p{
+      margin-top:30px;
+  }
