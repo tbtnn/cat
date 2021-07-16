@@ -1,0 +1,110 @@
+@media (max-width:1025px){
+
+    .box1{
+        width:90%;
+        margin-right:5%;
+        margin-left:5%;
+       height:280px;
+       
+    }
+    .box2{
+        width:90%;
+        margin-right:5%;
+        margin-left:5%;
+       height:280px;
+       
+    }
+    .box{
+        width:90%;
+        margin-right:5%;
+        margin-left:5%;
+       height:280px;
+       
+    }
+    .profile img{
+        width:30%;
+        height:200px;
+        float: left;
+        margin:0px 5%;
+        padding-top:35px;
+    }
+    .profile h2{
+     font-size:20px;
+    }
+    .profile p{
+        line-height:0px;
+    }
+    .flex2{
+       display: block!important;
+       flex-wrap:nowrap;
+        justify-content: flex-start;
+    }
+   .shoukai img{
+       width:80%;
+      margin-left:10%;
+      margin-right:10%;
+      height:auto;
+   }
+   .block{
+    display: inline-block;
+    width:46%;
+   margin-left:28%;
+   margin-right:28%;
+   margin-top:80px;
+}
+.block h3{
+    display: block;
+    text-align: center;
+    
+}
+
+}
+
+@media (max-width:750px){
+    .profile img{
+          width:30%;
+          height:auto;
+          margin-bottom:50px;
+          margin-top:50px;
+    }
+    .logo img{
+        width:170px;
+        margin-left:20px;
+    
+    }
+      
+    header{
+        height:80px;
+    }
+    .top img{
+        width:80%;
+        margin:200px 10%;
+        
+    }
+    .block{
+        width:80%;
+        margin:80px 10%;
+    }
+    .shoukai h3{
+        font-size:20px;
+    }
+    .shoukai p{
+        font-size:13px;
+    }
+    .fukidashi h1:after {
+       
+        left: 45%;
+        
+    }
+    .fukidashi h1{
+   
+        
+        margin: 120px 20%;
+        font-size:25px;
+    
+    }
+    .last{
+        display: none;
+    }
+   
+}
